@@ -101,39 +101,74 @@
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-
+        <img 
+        src="firefoxlogoonly120.png"
+        alt="firefox logo size 120px"
+        />
     </header>
 
     <main>
       <article>
         <!-- insert iframe from youtube -->
-
+        <iframe width="400" height="315" 
+          src="https://www.youtube.com/embed/ojcNcvb1olg?si=PKhdNRIaY8HwFUso" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
         <h2>Rocking the free web</h2>
 
-        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible,
+           so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
 
         <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
       </article>
 
       <div class="further-info">
-        <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img 
+            src="firefoxlogo400.png"
+            alt="Mozilla Firefox logo."
+            srcset="firefoxlogo120.png 120w, firefoxlogo400.png 400w"
+            sizes="(max-width: 400px) 120px, 50vw" 
+          />
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img
+            src="dino_head400.png"
+            alt="Mozilla Dino head logo."
+            srcset="dino_head120.png 120w, dino_head400.png 400w"
+            sizes="(max-width: 400px) 120px, 50vw"  
+          />
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img  
+            src="firefox-addons.jpg"
+            alt="Firefox Add-ons logo."
+            srcset="firefox-addons120.jpg 120w, firefox-addons.jpg 400w"
+            sizes="(max-width: 400px) 120px, 50vw" 
+          />
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img
+            src="mdn.svg"
+            alt="MDN Web Docs logo."
+            srcset="mdn-small.svg 120w, mdn.svg 400w"
+            sizes="(max-width: 400px) 120px, 50vw" 
+          />
         </a>
+      
         <div class="clearfix"></div>
       </div>
-
+      
       <div class="red-panda">
         <!-- insert picture element -->
+         <picture>
+            <source srcset="panda600.jpg" media="(max-width: 600px)">
+            <source srcset="panda1200.jpg" media="(min-width: 601px)">
+            <img src="panda1200.jpg" alt="A cute red panda and definetely not a raccoon.">
+         </picture>
       </div>
 
     </main>
